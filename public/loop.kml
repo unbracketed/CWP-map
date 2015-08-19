@@ -27,15 +27,6 @@ xmlns:atom="http://www.w3.org/2005/Atom">
     </gx:SimpleArrayField>
   </Schema>
 
-  <Placemark>
-    <name><![CDATA[CWP Loop Burbank (Start)]]></name>
-    <description><![CDATA[]]></description>
-    <TimeStamp><when>2015-02-27T21:19:21.055Z</when></TimeStamp>
-    <Point>
-      <coordinates>-117.706799,34.139004,467.0</coordinates>
-    </Point>
-  </Placemark>
-
   <Placemark id="tour">
     <name><![CDATA[CWP Loop Burbank]]></name>
     <description><![CDATA[]]></description>
@@ -2333,37 +2324,5 @@ xmlns:atom="http://www.w3.org/2005/Atom">
     </gx:MultiTrack>
   </Placemark>
 
-  <Placemark>
-    <name><![CDATA[CWP Loop Burbank (End)]]></name>
-    <description><![CDATA[Created by Google My Tracks on Android
-
-      Name: CWP Loop Burbank
-      Activity type: biking
-      Description: -
-      Total distance: 9.28 km (5.8 mi)
-      Total time: 40:23
-      Moving time: 37:46
-      Average speed: 13.79 km/h (8.6 mi/h)
-      Average moving speed: 14.74 km/h (9.2 mi/h)
-      Max speed: 51.74 km/h (32.2 mi/h)
-      Average pace: 4:21 min/km (7:00 min/mi)
-      Average moving pace: 4:04 min/km (6:33 min/mi)
-      Fastest pace: 1:10 min/km (1:52 min/mi)
-      Max elevation: 715 m (2347 ft)
-      Min elevation: 467 m (1532 ft)
-      Elevation gain: 283 m (929 ft)
-      Max grade: 20 %
-      Min grade: -14 %
-      Recorded: 2/27/2015 1:19 PM
-      ]]>
-
-    </description>
-    <TimeStamp>
-      <when>2015-02-27T21:59:44.435Z</when>
-    </TimeStamp>
-    <Point>
-      <coordinates>-117.706636,34.139133,473.0</coordinates>
-    </Point>
-  </Placemark>
 </Document>
 </kml>
