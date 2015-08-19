@@ -8,7 +8,7 @@ module.exports = getConfig({
     return {
       'index.html': context.defaultTemplate({
         head: '<link rel="stylesheet" href="ol3/ol.css"/>',
-        html: '<div id="map" style="width: 100%; height:400px"/>'
+        html: '<div id="map" style="width: 600px"/>'
       })
     }
   },
