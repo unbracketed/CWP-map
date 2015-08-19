@@ -7,13 +7,13 @@ var vector = new ol.layer.Vector({
     url: 'loop.kml',
     format: new ol.format.KML()
   })
-});
+})
 
 const map = new ol.Map({
   target: 'map',
   layers: [
     new ol.layer.Tile({
-      source: new ol.source.MapQuest({layer: 'sat'}),
+      source: new ol.source.OSM()
     }),
     vector
   ],
