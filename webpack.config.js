@@ -12,5 +12,5 @@ module.exports = getConfig({
       })
     }
   },
-  clearBeforeBuild: '!(ol3)'
+  clearBeforeBuild: '!(ol3|loop.kml)'
 })
