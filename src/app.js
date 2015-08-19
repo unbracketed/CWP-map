@@ -1,8 +1,8 @@
 import ol from 'openlayers'
 
-var projection = ol.proj.get('EPSG:3857');
+const projection = ol.proj.get('EPSG:3857')
 
-var vector = new ol.layer.Vector({
+const vector = new ol.layer.Vector({
   source: new ol.source.Vector({
     url: 'loop.kml',
     format: new ol.format.KML()
