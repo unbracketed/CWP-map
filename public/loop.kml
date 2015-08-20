@@ -10,8 +10,8 @@ xmlns:atom="http://www.w3.org/2005/Atom">
 
   <Style id="track">
     <LineStyle>
-      <color>7f0000ff</color>
-      <width>4</width>
+      <color>FF00CCff</color>
+      <width>7</width>
     </LineStyle>
   </Style>
 

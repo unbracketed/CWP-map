@@ -1,0 +1,8 @@
+body {
+  background: url("/images/approaching-gazebo.jpg")
+}
+
+#map {
+  padding: 10px;
+  background: #BB7
+}

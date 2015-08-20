@@ -1,10 +1,8 @@
 import ol from 'openlayers'
 import React from 'react'
+import defaultStyles from './styles.css'
 
 
-// size the map container
-//const mapElem = document.querySelector('#map')
-//mapElem.setAttribute('style', `width:600px;height:${window.innerHeight}px`)
 
 const initMap = function () {
 
@@ -25,7 +23,7 @@ const initMap = function () {
     target: 'map',
     layers: [
       new ol.layer.Tile({
-        source: new ol.source.OSM()
+        source: new ol.source.MapQuest({layer: 'sat'})
       }),
       vector
     ],
@@ -40,9 +38,49 @@ const initMap = function () {
 
 }
 
+var Header = React.createClass({
+  render: function() {
+    return (
+
+      <div className="demo-layout-transparent mdl-layout mdl-js-layout">
+        <header className="mdl-layout__header mdl-layout__header--transparent">
+          <div className="mdl-layout__header-row">
+            {/* Title */}
+            <span className="mdl-layout-title">Claremont Hills Wilderness Park</span>
+            {/* Add spacer, to align navigation to the right */}
+            <div className="mdl-layout-spacer" />
+            {/* Navigation */}
+            <nav className="mdl-navigation">
+              <a className="mdl-navigation__link" href>Link</a>
+              <a className="mdl-navigation__link" href>Link</a>
+              <a className="mdl-navigation__link" href>Link</a>
+              <a className="mdl-navigation__link" href>Link</a>
+            </nav>
+          </div>
+        </header>
+        <div className="mdl-layout__drawer">
+          <span className="mdl-layout-title">CHWP</span>
+          <nav className="mdl-navigation">
+            <a className="mdl-navigation__link" href>Trail Highlights</a>
+            <a className="mdl-navigation__link" href>Burbank Canyon</a>
+            <a className="mdl-navigation__link" href>Cobal Canyon</a>
+            <a className="mdl-navigation__link" href>Weather & Sun</a>
+            <a className="mdl-navigation__link" href>Wildlife</a>
+          </nav>
+        </div>
+        <main className="mdl-layout__content">
+        </main>
+      </div>
+    );
+  }
+});
+
 class Layout {
 
   componentDidMount () {
+      // size the map container
+      const mapElem = document.querySelector('#map')
+      mapElem.setAttribute('style', `width:${mapElem.style.width - 20}px;height:${window.innerHeight}px`)
       initMap()
   }
 
@@ -50,7 +88,9 @@ class Layout {
     return (
       <div className="mdl-grid">
         <div className="mdl-cell mdl-cell--4-col" id="map"></div>
-        <div className="mdl-cell mdl-cell--8-col">Claremont Wilderness Park</div>
+        <div className="mdl-cell mdl-cell--8-col">
+          <div className="mdl-typography--display-2">Claremont Hills Wilderness Park</div>
+        </div>
       </div>
     )
   }
