@@ -8,7 +8,7 @@ module.exports = getConfig({
     return {
       'index.html': context.defaultTemplate({
         head: '<link rel="stylesheet" href="ol3/ol.css"/><link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.3/material.indigo-pink.min.css"><script src="https://storage.googleapis.com/code.getmdl.io/1.0.3/material.min.js"></script><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">',
-        html: '<div id="map" style="width: 600px"/>'
+        html: '<div id="main"/>'
       })
     }
   },
